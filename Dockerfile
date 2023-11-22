@@ -21,4 +21,4 @@ RUN pip install -r requirements.txt
 COPY . /app/
 
 # Comando para iniciar la aplicación FastAPI
-CMD ["hypercorn", "main:app", "--bind", "127.0.0.1:$PORT", "--reload"]
+CMD hypercorn main:app --bind "[::]:$PORT"
