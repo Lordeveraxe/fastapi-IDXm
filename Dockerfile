@@ -21,4 +21,4 @@ RUN pip install -r requirements.txt
 COPY . /app/
 
 # Comando para iniciar la aplicación FastAPI
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "$PORT", "--reload"]
+CMD ["uvicorn", "main:app", "--host", "127.0.0.1, "--port", "$PORT", "--reload"]
